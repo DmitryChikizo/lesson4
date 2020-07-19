@@ -16,12 +16,12 @@ public class Task1 {
     }
 
     private static void printArray(int[] values) {
-        int[] temp = new int[values.length];
-        temp[0] = values[values.length - 1];
+        int[] array = new int[values.length];
+        array[0] = values[values.length - 1];
         for (int i = 0; i < values.length - 1; i++) {
-            temp[i + 1] = values[i];
+            array[i + 1] = values[i];
         }
-        for (int value : temp) {
+        for (int value : array) {
             System.out.print(value + " ");
         }
     }
